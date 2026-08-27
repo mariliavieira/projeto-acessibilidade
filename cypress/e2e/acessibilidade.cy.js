@@ -8,7 +8,7 @@ describe('Acessibilidade', () => {
       null,
       null,
       (violations) => {
-        cy.task('log', '\n########### Teste de Acessibilidade #########')
+        cy.task('log', '\n########### Teste de Acessibilidade ##########')
         cy.task('log', `Total de violações encontradas: ${violations.length}`)
 
       violations.forEach((violation) => {
