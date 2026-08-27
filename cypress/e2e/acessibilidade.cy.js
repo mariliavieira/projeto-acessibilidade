@@ -16,7 +16,7 @@ describe('Acessibilidade', () => {
         cy.task('log', `ID:       ${violation.id}`)
         cy.task('log', `Impacto:  ${violation.impact}`)
         cy.task('log', `Problema: ${violation.help}`)
-        cy.task('log', `Ajuda:    ${violation.helpUrl}`)
+        cy.task('log', `Site com Ajuda: ${violation.helpUrl}`)
 
       violation.nodes.forEach((node) => {
         cy.task('log', `Elemento: ${node.target.join(', ')}`)
