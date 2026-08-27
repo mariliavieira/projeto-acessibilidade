@@ -26,3 +26,10 @@ jobs:
 
       - name: Executar Cypress
         run: npx cypress run
+
+      - name: Salvar relatório de acessibilidade
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: relatorio-acessibilidade
+          path: cypress/results/
